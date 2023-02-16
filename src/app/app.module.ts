@@ -5,11 +5,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TypingQuoteComponent } from './typing-quote/typing-quote.component';
+import { TypingIndexComponent } from './typing-index/typing-index.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TypingQuoteComponent
+    TypingQuoteComponent,
+    TypingIndexComponent
   ],
   imports: [
     BrowserModule,
