@@ -68,7 +68,8 @@ export class TypingQuoteComponent implements OnInit {
 
 
   constructor(private service: CommonService) {
-
+    //參數設定為null，讓每次進到頁面都從quote API重新抓取新的quote資料
+    this.service._quoteData$ = null;
   }
 
   ngOnInit(): void {
