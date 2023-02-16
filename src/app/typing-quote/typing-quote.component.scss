@@ -1,0 +1,158 @@
+* {
+    font-family: 'Roboto Mono', monospace;
+}
+
+
+
+.main {
+    min-height: 100%;
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+
+
+}
+
+
+.arrow {
+    // width: 50%;
+    // margin: 0 auto;
+    // margin: 5% auto;
+    padding: 5%;
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    font-size: 200%;
+    // width: 50%;
+    // margin: 0 auto;
+}
+
+// .main-container{
+//     text-align: center;
+// }
+
+.title {
+    font-size: 300%;
+}
+
+.quote {
+    margin: 5em 5%;
+    font-size: 150%;
+}
+
+
+
+
+.result {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .result-content {
+        width: 80%;
+    }
+}
+
+
+
+
+.result-quote-outer {
+    width: 100%;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 34rem;
+}
+
+
+
+
+.result-quote {
+    font-family: 'Special Elite', cursive;
+    background: #cccccc;
+    color: #3f3f5a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 100%;
+    font-size: 200%;
+    border-radius: 30px;
+}
+
+blockquote {
+    // font-weight: 100;
+    // font-size: 2rem;
+    // max-width: 600px;
+    line-height: 1.4;
+    position: relative;
+    // margin: 0;
+    padding: 2.5rem;
+    max-width: 80%;
+    font-weight: bold;
+    font-family: "Special Elite", cursive;
+}
+
+blockquote:before,
+blockquote:after {
+    position: absolute;
+    color: #fa583b;
+    font-size: 350%;
+    width: 4rem;
+    height: 4rem;
+    font-weight: 400;
+}
+
+blockquote:before {
+    content: '“';
+    left: -5rem;
+    top: -2rem;
+}
+
+blockquote:after {
+    content: '”';
+    right: -5rem;
+    bottom: 1rem;
+}
+
+cite {
+    line-height: 3;
+    text-align: left;
+    font-family: 'Special Elite', cursive;
+}
+
+
+
+.blink {
+    font-size: 150%;
+    color: rgb(0, 48, 104);
+    margin: 1% auto;
+    animation: blink-frames 1.5s infinite;
+}
+
+@keyframes blink-frames {
+
+    from {
+        opacity: 1.0;
+    }
+
+    50% {
+        opacity: 0.4;
+    }
+
+    to {
+        opacity: 1.0;
+    }
+}

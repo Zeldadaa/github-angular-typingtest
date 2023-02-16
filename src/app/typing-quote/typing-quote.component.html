@@ -1,0 +1,59 @@
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Itim&family=Signika:wght@400;700&display=swap');
+</style>
+
+<div class="main">
+    <div class="arrow">
+        <i class="bi bi-arrow-left"></i>
+    </div>
+
+    <div class="main-container">
+
+        <div class="title">Typing Quote</div>
+
+        <ng-container *ngIf="dataQuote$|async as dataQuote">
+
+            <!-- 題目 區塊 -->
+            <div class="quote" id="quote">
+                <ng-container *ngFor="let char of quotecharArray$ |async">
+                    <span class='quote-chars' [innerHTML]="char"></span>
+                </ng-container>
+            </div>
+
+
+            <!-- 打字中資訊 區塊 -->
+            <div *ngIf="this._startClick">
+                <div>Mistakes:{{mistakeCount}}</div>
+            </div>
+
+            <!-- 結果 區塊 -->
+            <div *ngIf="this._ResultShow;" class="result">
+                <div class="result-content">
+                    <h3>Result</h3>
+                    <div>Accuracy:{{accuracy}}%</div>
+                </div>
+
+
+                <div class="result-quote-outer">
+                    <div class="result-quote">
+                        <ng-container>
+                            <blockquote>
+                                {{dataQuote._content}}
+                            </blockquote>
+                            <cite>
+                                {{dataQuote._author}}
+                            </cite>
+                        </ng-container>
+                    </div>
+                </div>
+
+                <!-- <button id="save-quote" (click)="saveQuoteProcess($event)">Save Quote</button> -->
+            </div>
+
+            <!-- 「按下Enter鍵開始」 區塊 -->
+            <div class="blink" *ngIf="!_startClick">
+                {{enterString()}}
+            </div>
+        </ng-container>
+    </div>
+</div>
