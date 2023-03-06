@@ -1,7 +1,5 @@
 $starFieldWidth: 10000;
 $starFieldHeight: 8000;
-// $starFieldWidth: 2560;
-// $starFieldHeight: 2560;
 $starStartOffset: 600px;
 $starOneScrollDuration: 100s;
 $starTwoScrollDuration: 125s;
@@ -25,7 +23,6 @@ $numStarThreeStars: 200;
 
 
 .main-container {
-  // background: linear-gradient(to bottom, #201c2f 0%, #100751 100%);
   background: linear-gradient(to bottom, #221556 0%, #08013a 100%);
   height: 100%;
   width: 100%;
@@ -101,12 +98,8 @@ $numStarThreeStars: 200;
 
 
 .content-layer {
-  // background: rgba(255, 255, 255, 0.5);
-  // background: linear-gradient(to bottom, #d8d8d880 0%, rgba(255, 255, 255, 0.5) 100%);
-  background: linear-gradient(to bottom, rgb(216 216 216 / 12%) 0%, rgb(255 255 255 / 40%) 100%);
+   background: linear-gradient(to bottom, rgb(216 216 216 / 12%) 0%, rgb(255 255 255 / 40%) 100%);
   height: 100%;
-  // width: 100vw;
-  // height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -114,12 +107,10 @@ $numStarThreeStars: 200;
 
 .content-container {
   font-weight: bold;
-  // font-size: 500px;
   text-align: center;
   user-select: none;
   margin: auto;
   font-size: 30vmin;
-  // text-shadow: 5px 3px 0px #e28888, 10px 6px 0px #91ff8db3, 15px 8px 0px rgb(255 255 255 / 76%);
   text-shadow: 9px 3px 0px #f16fbc, 18px 6px 0px rgb(145 255 141 / 70%), 27px 8px 0px rgb(255 255 255 / 76%)
 }
 
@@ -129,15 +120,12 @@ $numStarThreeStars: 200;
   display: flex;
   justify-content: center;
   gap: 2%;
-  // padding: 5%;
-
   width: 100%;
   margin: auto;
   height: 30%;
 }
 
 .type-item {
-  // width: 10%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -161,6 +149,12 @@ $numStarThreeStars: 200;
 }
 
 
+button:active{
+  background-color: rgb(211 209 209 / 60%);
+  transform: translate(10px, 10px);
+  box-shadow: 0 0 rgb(0 0 0);
+}
+
 
 
 
@@ -173,7 +167,6 @@ $numStarThreeStars: 200;
 
 
   .main-container {
-    // background: linear-gradient(to bottom, #201c2f 0%, #100751 100%);
     background: linear-gradient(to bottom, #221556 0%, #08013a 100%);
     width: 100%;
     height: auto;
@@ -181,7 +174,6 @@ $numStarThreeStars: 200;
 
 
   .content-layer {
-    // background-color: red;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -195,14 +187,12 @@ $numStarThreeStars: 200;
     user-select: none;
     margin: auto;
     font-size: 25vmin;
-    // text-shadow: 5px 3px 0px #e28888, 10px 6px 0px #91ff8db3, 15px 8px 0px rgb(255 255 255 / 76%);
     text-shadow:5px 3px 0px #f16fbc, 10px 6px 0px rgb(145 255 141 / 70%), 15px 8px 0px rgb(255 255 255 / 76%)
   }
 
   .type {
     display: flex;
     flex-direction: column;
-    // justify-content: center;
     gap: 2rem;
     width: 85%;
     margin: 3rem auto;
@@ -213,7 +203,6 @@ $numStarThreeStars: 200;
 
     .type-icon {
       height: auto;
-      // margin: auto;
       width: 35%;
     }
   }
