@@ -15,12 +15,11 @@
 
 
 .arrow {
-    // width: 50%;
-    // margin: 0 auto;
-    // margin: 5% auto;
-    padding: 5%;
-    font-size: 3rem;
+    padding: 2%;
+    font-size: 5vmin;
     cursor: pointer;
+    // padding: 5%;
+    // font-size: 3rem;
 }
 
 
@@ -30,22 +29,18 @@
     align-items: center;
     text-align: center;
     margin: auto;
-    font-size: 200%;
-    // width: 50%;
-    // margin: 0 auto;
+    // font-size: 200%;
+    
 }
 
-// .main-container{
-//     text-align: center;
-// }
 
 .title {
-    font-size: 300%;
+    font-size: 8vmin;
 }
 
 .quote {
     margin: 5em 5%;
-    font-size: 150%;
+    font-size: 5vmin;
 }
 
 
@@ -80,7 +75,6 @@
 
 .result-quote {
     font-family: 'Special Elite', cursive;
-    background: #cccccc;
     color: #3f3f5a;
     display: flex;
     flex-direction: column;
@@ -88,32 +82,33 @@
     justify-content: center;
     width: 80%;
     height: 100%;
-    font-size: 200%;
     border-radius: 30px;
 }
 
 blockquote {
-    // font-weight: 100;
-    // font-size: 2rem;
-    // max-width: 600px;
     line-height: 1.4;
     position: relative;
-    // margin: 0;
-    padding: 2.5rem;
-    max-width: 80%;
+    padding: 1rem;
+    // padding: 2.5rem;
+    // max-width: 80%;
     font-weight: bold;
     font-family: "Special Elite", cursive;
+    span{
+        background-color: antiquewhite;
+        font-family: "Special Elite", cursive;
+        font-size: 5vmin;
+    }
 }
 
 blockquote:before,
 blockquote:after {
     position: absolute;
-    color: #fa583b;
-    font-size: 350%;
+    color: #868585;
+    font-size: 16vmin;
     width: 4rem;
     height: 4rem;
     font-weight: 400;
-}
+    }
 
 blockquote:before {
     content: '“';
@@ -136,7 +131,7 @@ cite {
 
 
 .blink {
-    font-size: 150%;
+    font-size: 4vmin;
     color: rgb(0, 48, 104);
     margin: 1% auto;
     animation: blink-frames 1.5s infinite;
@@ -156,3 +151,11 @@ cite {
         opacity: 1.0;
     }
 }
+
+
+
+// @media screen and (max-device-width: 1000px) {
+//     .main-container{
+//         background-color: red;
+//     }
+// }

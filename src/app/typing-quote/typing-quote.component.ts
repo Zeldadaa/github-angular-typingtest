@@ -1,6 +1,6 @@
 import { CommonService } from './../common.service';
 import { Component, OnInit } from '@angular/core';
-import { Observable, map} from 'rxjs';
+import { Observable, map } from 'rxjs';
 import { C_QUOTE } from '../common.class';
 
 @Component({
@@ -73,14 +73,14 @@ export class TypingQuoteComponent implements OnInit {
   }
 
   ngOnInit(): void {
-
     document.body.addEventListener("keydown", (event) => { this.onKeyPress(event); });
-    //呼叫參數
-    // this.dataQuote$;
-    // this.dataQuote$.subscribe(s => {
-    //   console.log('quoteData', s);
-    // });
   }
+
+
+
+
+
+
 
 
   /**

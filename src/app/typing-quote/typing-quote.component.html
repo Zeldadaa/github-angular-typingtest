@@ -18,6 +18,8 @@
                 <ng-container *ngFor="let char of quotecharArray$ |async">
                     <span class='quote-chars' [innerHTML]="char"></span>
                 </ng-container>
+                
+                
             </div>
 
 
@@ -38,7 +40,10 @@
                     <div class="result-quote">
                         <ng-container>
                             <blockquote>
-                                {{dataQuote._content}}
+                                <span>
+
+                                    {{dataQuote._content}}
+                                </span>
                             </blockquote>
                             <cite>
                                 {{dataQuote._author}}
