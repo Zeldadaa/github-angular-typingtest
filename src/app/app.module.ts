@@ -6,12 +6,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TypingQuoteComponent } from './typing-quote/typing-quote.component';
 import { TypingIndexComponent } from './typing-index/typing-index.component';
+import { TypingWordComponent } from './typing-word/typing-word.component';
+import { TypingStoryComponent } from './typing-story/typing-story.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TypingQuoteComponent,
-    TypingIndexComponent
+    TypingIndexComponent,
+    TypingWordComponent,
+    TypingStoryComponent
   ],
   imports: [
     BrowserModule,

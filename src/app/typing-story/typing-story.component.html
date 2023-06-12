@@ -1,0 +1,10 @@
+<p>typing-story works!</p>
+
+ <!-- 題目 區塊 -->
+ <div>
+
+    <ng-container *ngFor="let char of storySpanArray$ |async">
+        <span class="story-chars" [innerHTML]="char"></span>
+    </ng-container>
+
+</div>

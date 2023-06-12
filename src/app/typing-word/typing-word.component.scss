@@ -1,0 +1,30 @@
+* {
+    font-family: 'Roboto Mono', monospace;
+}
+
+
+
+.word{
+    margin: 1em 1%;
+    padding: 10px;
+    font-size: 4vmin;
+    height: 20rem;
+    overflow: scroll;
+    background-color: aliceblue;
+}
+
+
+.word-container{
+
+    span{
+        padding: 3px 5px 3px 5px;
+    }
+    
+}
+
+.highlight{
+    background: #dddddd;
+    border-radius: 4px;
+    color: rgb(185, 84, 84);
+}
+

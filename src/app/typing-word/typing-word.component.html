@@ -1,0 +1,37 @@
+<style>
+
+</style>
+
+<div class="main">
+    <div class="arrow" [routerLink]="['']">
+        <i class="bi bi-arrow-left"></i>
+    </div>
+
+    <div class="main-container">
+
+        <div class="title">Typing Word</div>
+
+        <ng-container>
+
+            <!-- 題目 區塊 -->
+            <div class="word" id="wordDiv">
+                <div class="word-container">
+                    <ng-container *ngFor="let char of wordsSpanArray |async; let wordIndex = index">
+                        <span class="words-chars"  [id]="wordIndex" [innerHTML]="char"></span>&nbsp;
+                    </ng-container>
+                </div>
+
+            </div>
+
+            <!-- 打字 區塊 -->
+            <div class="word-input">
+                <input id="typingInput" type="text" (keyup.space)="onSpace($event)">
+                <button (click)="onStart()">START</button>
+            </div>
+
+
+        </ng-container>
+    </div>
+</div>
+
+

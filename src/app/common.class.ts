@@ -1,10 +1,6 @@
 import { Injectable } from '@angular/core';
 
 
-
-
-
-
 /**
  * 英文佳句 對應API
  * @export
@@ -42,7 +38,6 @@ export class C_QUOTE {
     _dateModified: string = '';
 
     constructor() { }
-
 
     public static haveValue(id: string,
         content: string,
@@ -88,6 +83,82 @@ export class C_QUOTE {
 }
 
 
+///////
+
+/**
+ * 英文故事 對應API
+ * @export
+ * @class C_STORY
+ */
+export class C_STORY {
+
+    _id: string = '';
+
+    /**
+     * 故事標題
+     * @type {string}
+     * @memberof C_STORY
+     */
+    _title: string = '';
+    /**
+     * 故事作者
+     * @type {string}
+     * @memberof C_STORY
+     */
+    _author: string = '';
+    /**
+     * 故事內容
+     * @type {string}
+     * @memberof C_STORY
+     */
+    _story: string = '';
+    _moral: string = '';
+
+    constructor() { }
+
+    public static haveValue(
+        id: string,
+        title: string,
+        author: string,
+        story: string,
+        moral: string): C_STORY {
+
+        const cls = new C_STORY();
+        cls._id = id;
+        cls._title = title;
+        cls._author = author;
+        cls._story = story;
+        cls._moral = moral;
+    
+        return cls;
+    }
+
+}
+
+
+///////
+
+
+/**
+ * 英文單字 對應API
+ * @export
+ * @class C_WORD
+ */
+export class C_WORD {
+
+    _words: string[] = [];
+
+    constructor() { }
+
+    public static haveValue(words:string[]): C_WORD {
+        const cls = new C_WORD();
+        cls._words = words;
+        return cls;
+    }
+
+}
+
+
 @Injectable({
     providedIn: 'root',
 })
@@ -102,6 +173,14 @@ export class DataAdapter {
                 ret = C_QUOTE.haveValue(item._id, item.content, item.author, item.tags, item.authorSlug, item.length, item.dateAdded, item.dateModified);
                 break;
 
+            case C_STORY:
+                ret = C_STORY.haveValue(item._id, item.title, item.author, item.story, item.moral);
+                break;
+            
+            case C_WORD:
+                ret = C_WORD.haveValue(item);
+                break;
+            
             default:
                 break;
         }

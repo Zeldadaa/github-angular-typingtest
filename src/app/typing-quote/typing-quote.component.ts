@@ -31,7 +31,7 @@ export class TypingQuoteComponent implements OnInit {
   private currentTypeIndex = 0;
 
   /**
-   * 呼叫參數就能
+   * 呼叫參數就能讀取資料，會判斷需不需要從service抓，和處理字串
    * @readonly
    * @type {Observable<C_QUOTE>}
    * @memberof TypingQuoteComponent
